@@ -1,0 +1,51 @@
+.jumbotron-fluid{
+    border-bottom: 10px;
+       border: solid;
+       border-color:#000000;
+       background-image: url(assets/header.jpg);
+       -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+      background-position-x: center;
+   }
+   .footer {
+position: absolute;
+ bottom: 0;
+ width: 100%;
+ /* Set the fixed height of the footer here */
+ height: 60px;
+ background-image: url(assets/header.jpg);
+       -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+    background-position-x: center;
+ 
+    border-top-width: 50px;
+       border: solid;
+       border-color:#000000;
+ 
+}
+html {
+ position: relative;
+ min-height: 100%;
+}
+body {
+ /* Margin bottom by footer height */
+ min-height: 100%;
+ background-image: radial-gradient(circle, #0d1a3e, #1c122c, #1c0b1c, #14050e, #000000);
+ /* margin-bottom: 40px; */
+}
+.headline{
+   border-width: 50px;
+       border: solid;
+       border-color:#000000;
+   
+}
+.imageLink{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: .95;
+}
