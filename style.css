@@ -34,15 +34,10 @@ html {
 body {
  /* Margin bottom by footer height */
  min-height: 100%;
- background-image: radial-gradient(circle, #0d1a3e, #1c122c, #1c0b1c, #14050e, #000000);
+
  /* margin-bottom: 40px; */
 }
-.headline{
-   border-width: 50px;
-       border: solid;
-       border-color:#000000;
-   
-}
+
 .imageLink{
     position: absolute;
     bottom: 0;
