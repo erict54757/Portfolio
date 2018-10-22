@@ -1,41 +1,35 @@
-.jumbotron-fluid{
-    border-bottom: 10px;
-       border: solid;
-       border-color:#000000;
-       background-image: url(assets/header.jpg);
-       -webkit-background-size: cover;
-     -moz-background-size: cover;
-     -o-background-size: cover;
-     background-size: cover;
-      background-position-x: center;
-   }
+
    .footer {
 position: absolute;
  bottom: 0;
  width: 100%;
  /* Set the fixed height of the footer here */
  height: 60px;
- background-image: url(assets/header.jpg);
-       -webkit-background-size: cover;
-     -moz-background-size: cover;
-     -o-background-size: cover;
-     background-size: cover;
-    background-position-x: center;
- 
-    border-top-width: 50px;
-       border: solid;
-       border-color:#000000;
- 
 }
 html {
  position: relative;
- min-height: 100%;
+ min-height: 860px;
 }
 body {
  /* Margin bottom by footer height */
  min-height: 100%;
-
+ background-image: url(http://resimdiyari.com/action.php?id=8348&part=e&download);
+ -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+    background-position-x: center;
+    font-family: 'Amaranth', sans-serif;
  /* margin-bottom: 40px; */
+}
+h3{
+    /* background-color: #55eb7f; */
+    /* background-image: linear-gradient(to bottom, #6955eb, #0093ff, #00bbff, #00d7c3, #55eb7f); */
+}
+.navbar{
+    /* background-image: linear-gradient(to bottom, #6955eb, #0093ff, #00bbff, #00d7c3, #55eb7f); */
+    /* background-color: #6955eb; */
+
 }
 
 .imageLink{
