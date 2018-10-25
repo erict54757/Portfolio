@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://bootswatch.com/4/journal/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel='stylesheet' href="style.css">
     
 
@@ -16,7 +17,7 @@
 </head>
 
 <body>
-        <nav class="bg-dark navbar navbar-expand-lg navbar-dark p-0 m-0 ">
+        <nav class=" navbar navbar-expand-lg navbar-light p-0 m-0 ">
                 <h1 class="name ml-5 mb-0 p-3 card rounded">Eric Taft</h1>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -34,12 +35,14 @@
                             <a class="nav-link" href="#"></a>
                         </li>
                     </ul>
-                    <span class="navbar-text mr-2">
-                        <a id="link" class="m-2" href="index.html">About |</a>
+                    <span class="navbar-text mr-2 d-flex justify-content-center">
+                            <a href="https://www.linkedin.com/in/eric-taft-341909132/" id="link" class="m-2" target="_blank" rel="noopener noreferrer">linked <i class="fab fa-linkedin"></i>  |</a> 
         
-                        <a id="link" class="m-2" href="portfolio.html">Portfolio |</a>
+                        <a id="link" class="m-2" href="index.html">About <i class="fa fa-user" aria-hidden="true"></i> |</a>
         
-                        <a id="link" class="m-2" href="contact.html">Contacts</a>
+                        <a id="link" class="m-2" href="portfolio.html">Portfolio <i class="fa fa-briefcase" aria-hidden="true"></i> |</a>
+        
+                        <a id="link" class="m-2" href="contact.html">Contacts <i class="fa fa-envelope" aria-hidden="true"></i></a>
                     </span>
                 </div>
             </nav>
@@ -52,9 +55,10 @@
 
                 <div class="row mb-3">
 
-                    <div class="col-sm-4"> <img class="img-thumbnail" src="https://github.com/erict54757/portfolio/blob/master/assets/images/bio.jpg?raw=true"
+                    <div class="col-md-4 mb-4  "> <img class="img-fluid shadow-lg border-dark rounded" src="https://github.com/erict54757/portfolio/blob/master/assets/images/bio.jpg?raw=true"
                             alt="me"></div>
-                    <strong class="col-sm-8 text-dark"  style="font-size:1.1rem;">I'm a Wisconsin native reinventing myself with a career change into
+                            <div class="col-md-6 offset-md-1 ">
+                    <strong > <div class="text-dark bg-light rounded border-dark shadow-lg p-1 mb-4 text-center"  style="font-size:1.1rem;">I'm a Wisconsin native reinventing myself with a career change into
                         technology and coding. I pride myself on the hard work I have put into every occupation I have
                         filled in the past.These include but are not limited to: being both an infantryman and a supply
                         logistics soldier in the Wisconsin Army National Guard, a Truck Driver for a major home supply
@@ -62,7 +66,10 @@
                         Web Developement and software engineering. Having completed the rigorious coursework of the
                         UNCC's Coding Bootcamp, I am positioned well to jumpstart forward and begin working on projects
                         within your organization.
-                    </strong>
+                    </div></strong>
+                    </div>
+                    <div class= linkedIn ></div>
+                    
                 </div>
                 
             </div>
@@ -77,8 +84,8 @@
 
     
     
-    <footer class="footer bg-dark">
-        <nav class="navbar text-light  justify-content-center p-3  rounded-top">
+    <footer class="footer ">
+        <nav class="navbar text-dark  justify-content-center p-3  rounded-top">
             Copyright@
         </nav>
 

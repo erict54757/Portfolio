@@ -22,15 +22,16 @@ body {
     font-family: 'Amaranth', sans-serif;
  /* margin-bottom: 40px; */
 }
-h3{
-    /* background-color: #55eb7f; */
-    /* background-image: linear-gradient(to bottom, #6955eb, #0093ff, #00bbff, #00d7c3, #55eb7f); */
-}
+
 .navbar{
     /* background-image: linear-gradient(to bottom, #6955eb, #0093ff, #00bbff, #00d7c3, #55eb7f); */
-    /* background-color: #6955eb; */
+    background-color: #dde1fc48;
 
 }
+.link{
+    background-color: #dde1fc7c;
+}
+
 
 .imageLink{
     position: absolute;
