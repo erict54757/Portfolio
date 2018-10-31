@@ -5,6 +5,9 @@
  *
  * Made By MaterializeCSS.com
  */
+ .image{
+  border-radius: 3px;
+}
 
 nav ul a,
 nav .brand-logo {
