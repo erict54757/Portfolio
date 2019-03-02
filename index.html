@@ -148,10 +148,15 @@
         <h4 class="center">Contact Me</h4>
 
         <form class="col l12 m12 s12 center" role="form" action="https://postmail.invotes.com/send" method="post" id="email_form">
-          <div class="form-group">
-            <input class="rounded form-control" type="text" name="subject" placeholder="Subject" /></div>
-          <div class="form-group">
-            <textarea class="rounded form-control" name="text" placeholder="Message" id="message" maxlength="140" rows="7"></textarea>
+          <div class="input-field col s12">
+              <i class="material-icons prefix">subject</i>
+            <input class="rounded form-control" type="text" id="subject" name="subject" placeholder="Subject" />
+            <label for="subject">Subject</label>
+          </div>
+          <div class="input-field col s12">
+              <i class="material-icons prefix">message</i>
+            <textarea class="rounded form-control materialize-textarea" name="text" placeholder="Message" id="message" maxlength="140" rows="7"></textarea>
+            <label for="message">Message</label>
             <span id="contact" class="section scrollspy" class="help-block">
               <p id="characterLeft" class="help-block ">You have reached the limit</p>
             </span>
@@ -159,7 +164,7 @@
 
           </div>
 
-          <input type="hidden" name="access_token" value="eqhitskqjijhat94ecddwtzc" />
+          <input type="hidden" name="access_token" value="8k4qvdi6g9j8vy153psk4uzo" /> 
           <!-- return urls can be fully qualified -OR-
                  start with / for root relative -OR-
                  start with . for url relative -->
@@ -168,11 +173,14 @@
 
 
           <!-- set the reply-to address -->
-          <div class="form-group">
-            <input class="rounded form-control" type="text" name="reply_to" placeholder="Your Email" /> </div>
-
-          <div class="form-group">
-            <input class="rounded form-control" type="text" name="extra_phone_number" placeholder="Phone Number" />
+          <div class="input-field col s12 m6">
+              <i class="material-icons prefix">email</i>
+            <input class="rounded form-control" id="email" type="email" name="reply_to" placeholder="Your Email" />
+            <label for="email">Email</label> </div>
+          <div class="input-field col s12 m6">  
+              <i class="material-icons prefix">phone</i>
+            <input class="rounded" id="icon_telephone" type="number"  name="extra_phone_number" placeholder="Phone Number" />
+            <label for="icon_telephone">Telephone</label>
           </div>
 
           <!-- to split your message into 160 chars
@@ -180,7 +188,7 @@
           <!-- <input type="hidden"
                         name="sms_format" value="true" /> -->
 
-          <input class="btn waves-effect waves-teal" id="submit_form" type="submit" value="Send" />
+          <input class="btn waves-effect  waves-light grey darken-3 send " id="submit_form" type="submit" value="Send" />
 
         </form>
       </div>
