@@ -28,34 +28,113 @@ $(document).ready(function(){
  
   
  // contact form 
-  $('#characterLeft').text('140 characters left');
+ $('#characterLeft').text('140 characters left');
   $('#message').keydown(function () {
-      var max = 140;
-      var len = $(this).val().length;
-      if (len >= max) {
-          $('#characterLeft').text('You have reached the limit');
-          $('#characterLeft').addClass('red');
-          $('.btnSubmit').addClass('disabled');            
-      } 
-      else {
-          var ch = max - len;
-          $('#characterLeft').text(ch + ' characters left');
-          $('.btnSubmit').removeClass('disabled');
-          $('#characterLeft').removeClass('red');            
-      }
-  });    
+    var max = 140;
+    var len = $(this).val().length;
+    if (len >= max) {
+      $('#characterLeft').text('You have reached the limit');
+      $('#characterLeft').addClass('red');
+      $('.btnSubmit').addClass('disabled');
+    }
+    else {
+      var ch = max - len;
+      $('#characterLeft').text(ch + ' characters left');
+      // $('.btnSubmit').removeClass('disabled');
+      $('#characterLeft').removeClass('red');
+    }
+  });
 });
+var x=document.getElementById("myFrame");
+function getLocation()
+{
+if (navigator.geolocation)
+{
+navigator.geolocation.getCurrentPosition(showPosition);
+}
+else{x.innerHTML="Geolocation is not supported by this browser.";}
+}
+function showPosition(position)
+{
+x.innerHTML="Latitude: " + position.coords.latitude + 
+"<br>Longitude: " + position.coords.longitude;  
+}
+getLocation()
+
+var submitButton = document.getElementById("submit_form");
+var form = document.getElementById("email_form");
+form.addEventListener("submit", function (e) {
+  setTimeout(function () {
+    submitButton.value = "Sending...";
+    submitButton.disabled = true;
+  }, 1);
+});
+var emailReg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+validateEmailReg = function () {
+  return emailReg.test($('#email').val())
+
+}
+document.onkeyup = myKeyUpHandler;
+$('#icon_telephone').keydown(function () {
+
+ 
+    if ($('#icon_telephone').val().length === 10) {
+      $('#icon_telephone').attr("class", "valid")
+      
+    } else {
+      $('#icon_telephone').attr("class", "invalid")
+      
+    }
+
+  });
 
 
-      var submitButton = document.getElementById("submit_form");
-      var form = document.getElementById("email_form");
-      form.addEventListener("submit", function (e) {
-          setTimeout(function () {
-              submitButton.value = "Sending...";
-              submitButton.disabled = true;
-          }, 1);
-      });
+// $('#email').keydown(function () {
 
+
+//     if (validateEmailReg()) {
+//       $('#email').attr("class", "valid")
+      
+//     } else {
+//       $('#email').attr("class", "invalid")
+      
+//     }
+
+//   });
+
+
+validatePhoneSubmit = function () {
+  if ($('#icon_telephone').val().length === 10) {
+
+    return true
+  } else {
+    return false
+  }
+
+}
+
+function myKeyUpHandler() {
+if($('#email').val()!=0)
+  $('#email').keyup(function () {
+
+
+    if (validateEmailReg()) {
+      $('#email').attr("class", "valid")
+      
+    } else {
+      $('#email').attr("class", "invalid")
+      
+    }
+
+  });
+ 
+  if ($('#message').val() && validatePhoneSubmit() && validateEmailReg() && $('#subject').val()) {
+    $('.btnSubmit').removeClass('disabled');
+  }
+  if (!$('#message').val() || !validatePhoneSubmit() || !validateEmailReg() || !$('#subject').val()) {
+    $('.btnSubmit').addClass('disabled');
+  }
+}
 
 
 
