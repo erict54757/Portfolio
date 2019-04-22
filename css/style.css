@@ -5,25 +5,118 @@
  *
  * Made By MaterializeCSS.com
  */
- .image{
-  border-radius: 3px;
+
+ .download-button{
+  position: relative;
+  font-size: 2.5rem;
+  left: 0px;
+  top:7px;
+
+ }
+ .links{
+   margin-left: 15%;
+ }
+
+.infoIcon{
+  position: absolute;
+  font-size: 3rem;
+  top: 10px;
+  left: 20px;
+  color:#1565c0;
+  border-radius: 30px;
+  
+  background-color: white
 }
 
+ 
+  /* Css Colors above */
+ .caro{
+margin-top:-60px;
+
+
+}
+.caroImage{
+  border-radius: 5px;
+  height:150%;
+  width: auto;
+}
+.image1{
+  height: 400px;
+}
+
+
+.title1 {
+  color: #444;
+ font-weight: bold;
+}
+.send{
+ -webkit-text-fill-color: white;
+}
 nav ul a,
 nav .brand-logo {
   color: #444;
+  font-size: 1.7rem;
 }
-.send{
-  -webkit-text-fill-color: white;
- }
 
 p {
   line-height: 2rem;
 }
-
+.sidenav{
+  width: 240px;
+}
 .sidenav-trigger {
   color: #26a69a;
 }
+.material-icons{
+   color: #444 !important;
+  }
+
+.material-icons.active {
+  color: #1565c0 !important;
+  }
+
+
+.input-field input[type=text] + label,input[type=email] + label,input[type=number] + label, .materialize-textarea:focus:not([readonly]) + label {
+ color: #444 !important;
+}
+
+.input-field input[type=text],input[type=number],input[type=email], .materialize-textarea:focus:not([readonly]) {
+ border-bottom: 1px solid #444  !important;
+ box-shadow: 0 1px 0 0 #444  !important;
+}
+
+
+.input-field input[type=text]:focus + label,input[type=email]:focus + label,input[type=number]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+  color: #1565c0 !important;
+}
+
+.input-field input[type=text]:focus,input[type=email]:focus,input[type=number]:focus, .materialize-textarea:focus:not([readonly]) {
+ border-bottom: 1px solid #1565c0 !important;
+ box-shadow: 0 1px 0 0 #1565c0 !important;
+}
+
+/* textarea */
+.input-field textarea[type=text] + label, .materialize-textarea:focus:not([readonly]) + label {
+  color: #444 !important;
+ }
+ 
+ .input-field textarea[type=text], .materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #444  !important;
+  box-shadow: 0 1px 0 0 #444  !important;
+ }
+ 
+ 
+ .input-field textarea[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+  color: #1565c0 !important;
+ }
+ 
+ .input-field textarea[type=text]:focus, .materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #1565c0 !important;
+  box-shadow: 0 1px 0 0 #1565c0 !important;
+ }
+ 
+ 
+/* textarea */
 
 .parallax-container {
   min-height: 380px;
@@ -41,17 +134,65 @@ p {
     top: 40%;
   }
   #index-banner .section {
-    top: 10%;
+    top: 5%;
   }
+  .projectTitle{
+    padding-bottom: 30px;
+  }
+  .links{
+    margin-left: 8%;
+  }
+  
 }
-.carouselLink{
-  margin: 0;
-}
+
+
 
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
   }
+  #download-button{
+position: absolute;
+left: 25%;
+right: 25%;
+bottom: -10px;
+  }
+  .links{
+    margin-left:-20px;
+    margin-right:-10px;
+    margin-left: 5%;
+    font-size: .9rem;
+    white-space: nowrap;
+
+  }
+
+  .caro{
+    margin-top: -40px;
+  }
+  .caroImage{
+    height:100%;
+    width: auto;
+  }
+  
+.infoIcon{
+  font-size: 2rem;
+  top: 5px;
+  left: 15px;
+}
+.download-buttonBottom{
+  position: relative;
+  font-size: 1.5rem;
+  left: 0px;
+  top:10px;
+  color: white !important
+ 
+
+ }
+}
+
+nav .brand-logo {
+  color: #444;
+  font-size: 1.6rem;
 }
 
 .icon-block {
@@ -63,6 +204,15 @@ p {
 
 footer.page-footer {
   margin: 0;
-}
+} 
+.download-buttonBottom{
+  position: relative;
+  font-size: 2rem;
+  left: 0px;
+  top:10px;
+  color: white !important
+ 
+
+ }
 div {
   font-family: 'Roboto Slab', serif; }
