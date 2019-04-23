@@ -62,11 +62,9 @@ function showPosition(position)
     data= {
      
      subject: 'alert someone viewed your page',
-     text: "Their position is Latitude: " + position.coords.latitude + "Longitude: " + position.coords.longitude,
+     text: "Their position is Latitude: ",
       access_token: "eqhitskqjijhat94ecddwtzc",
-      reply_to: "erict54757@gmail.com",
-   
-
+      reply_to: "erict54757@gmail.com"
     }
     $.post(URL,data,function(status){
       console.log(status)
