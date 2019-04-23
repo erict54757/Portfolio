@@ -63,7 +63,7 @@ function showPosition(position)
      
      subject: 'alert someone viewed your page',
      text: "Their position is Latitude: ",
-      access_token: "eqhitskqjijhat94ecddwtzc",
+      access_token: "8k4qvdi6g9j8vy153psk4uzo ",
       success_url: ".?message=Email+Successfully+Sent%21&isError=0",
       error_url:".?message=Email+could+not+be+sent.&isError=1",
       reply_to: "erict54757@gmail.com"
