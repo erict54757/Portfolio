@@ -30,11 +30,11 @@
 
  
   /* Css Colors above */
- .caro{
+ /* .caro{
 margin-top:-60px;
 
 
-}
+} */
 .caroImage{
   border-radius: 5px;
   height:150%;
@@ -64,57 +64,6 @@ p {
 .sidenav{
   width: 240px;
 }
-.sidenav-trigger {
-  color: #26a69a;
-}
-.material-icons{
-   color: #444 !important;
-  }
-
-.material-icons.active {
-  color: #1565c0 !important;
-  }
-
-
-.input-field input[type=text] + label,input[type=email] + label,input[type=number] + label, .materialize-textarea:focus:not([readonly]) + label {
- color: #444 !important;
-}
-
-.input-field input[type=text],input[type=number],input[type=email], .materialize-textarea:focus:not([readonly]) {
- border-bottom: 1px solid #444  !important;
- box-shadow: 0 1px 0 0 #444  !important;
-}
-
-
-.input-field input[type=text]:focus + label,input[type=email]:focus + label,input[type=number]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
-  color: #1565c0 !important;
-}
-
-.input-field input[type=text]:focus,input[type=email]:focus,input[type=number]:focus, .materialize-textarea:focus:not([readonly]) {
- border-bottom: 1px solid #1565c0 !important;
- box-shadow: 0 1px 0 0 #1565c0 !important;
-}
-
-/* textarea */
-.input-field textarea[type=text] + label, .materialize-textarea:focus:not([readonly]) + label {
-  color: #444 !important;
- }
- 
- .input-field textarea[type=text], .materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #444  !important;
-  box-shadow: 0 1px 0 0 #444  !important;
- }
- 
- 
- .input-field textarea[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
-  color: #1565c0 !important;
- }
- 
- .input-field textarea[type=text]:focus, .materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #1565c0 !important;
-  box-shadow: 0 1px 0 0 #1565c0 !important;
- }
- 
  
 /* textarea */
 
