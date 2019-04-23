@@ -56,21 +56,34 @@ navigator.geolocation.getCurrentPosition(showPosition);
 }
 function showPosition(position)
 {
- 
+  function onSuccess() {
+    // remove this to avoid redirect
+    window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
+}
+
+function onError(error) {
+    // remove this to avoid redirect
+    window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
+}
+
    
     URL= 'https://postmail.invotes.com/send',
     data= {
      
      subject: 'alert someone viewed your page',
-     text: "Their position is Latitude: ",
-      access_token: "8k4qvdi6g9j8vy153psk4uzo ",
-      success_url: ".?message=Email+Successfully+Sent%21&isError=0",
-      error_url:".?message=Email+could+not+be+sent.&isError=1",
-      reply_to: "erict54757@gmail.com"
+     text: "Their position is Latitude: " + position.coords.latitude + "Longitude: " + position.coords.longitude,
+      access_token: "eqhitskqjijhat94ecddwtzc",
+      reply_to: "erict54757@gmail.com",
+     
+   
+
     }
-    $.post(URL,data,function(status){
-      console.log(status)
-    })
+    $.post(URL,data,onSuccess
+      ).fail(onError);
+
+      return false;{
+      
+    }
   
  
 }
