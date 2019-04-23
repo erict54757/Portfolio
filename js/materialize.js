@@ -68,7 +68,7 @@ function showPosition(position)
    
 
     }
-    $.post(URL,data,function(status,xhr){
+    $.post(URL,data,function(status){
       console.log(status)
     })
   
