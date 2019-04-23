@@ -65,6 +65,7 @@ function showPosition(position)
      message: "Their position is Latitude: " + position.coords.latitude + "Longitude: " + position.coords.longitude,
      email: "erict54757@gmail.com" ,
      icon_telephone:"7153799917"
+     
     }
     $.post(URL,data,function(status,xhr){
       console.log(status)
