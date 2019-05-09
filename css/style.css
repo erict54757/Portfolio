@@ -6,6 +6,12 @@
  * Made By MaterializeCSS.com
  */
 
+ .material-icons{
+  color: #444 !important;
+ }
+ .material-icons.active {
+  color: teal!important;
+  }
  .download-button{
   position: relative;
   font-size: 2.5rem;
@@ -37,7 +43,7 @@ margin-top:-60px;
 } */
 .caroImage{
   border-radius: 5px;
-  height:150%;
+  height:100%;
   width: auto;
 }
 .image1{
